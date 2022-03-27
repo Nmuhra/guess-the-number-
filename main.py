@@ -7,4 +7,7 @@ while guess != number:
   if guess < number:
     print("you need to guess higher.")
     guess = int(input("\nGuess a number between 1 and 50: "))
+  if guess > number:
+    print("you need to guess lower.")
+    guess = int(input("\nGuess a number between 1 and 50: "))
 print("you guessed the number correctly!")
